@@ -8,6 +8,14 @@ class NewApp(Application):
     def __init__(self):
         handlers = urlpatterns
         # 这里可填写连接数据库代码，并生成游标
+        self.conn = psycopg2.connect(
+                            host='localhost',
+                            port=5432,
+                            database='database',
+                            user='username',
+                            password='password'
+                            )
+        self.db = self.conn.cursor()
 
         print('服务器程序启动成功')
 
