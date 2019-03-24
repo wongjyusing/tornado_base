@@ -22,7 +22,7 @@
 # 使用方法
 下载项目文件。  
 `git clone https://github.com/wongjyusing/tornado_base.git`  
-`cd tornado_base`
+`cd tornado_base`  
 然后删除原来的git配置文件，在当前目录下执行下面的代码。   
 `find . -name ".git" | xargs rm -Rf`  
 重命名该目录,修改下面的new_name为你自己的项目名称。
